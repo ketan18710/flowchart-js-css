@@ -1,0 +1,174 @@
+body {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 2vw 1vw;
+	font-size: 2.5vw;
+  }
+.flowchart {
+	box-sizing: border-box;
+	outline: none;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-around;
+	width: 100%;
+	text-align: center;
+	font-size: 2vw
+}
+
+.flowchart *,
+.flowchart *::after,
+.flowchart *::before {
+	box-sizing: border-box;
+	outline: none;
+	margin: 0;
+	padding: 0;
+	list-style: none
+}
+
+.flowchart ul {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-around;
+	position: relative;
+	padding: 1em 0
+}
+
+.flowchart ul:after {
+	content: '';
+	position: absolute;
+	top: 1em;
+	left: 50%;
+	height: 1em;
+	border-left: 3px solid black
+}
+
+.flowchart>ul {
+	padding: 0
+}
+
+.flowchart li {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	position: relative;
+	padding: 3em 1em 0 1em
+}
+
+.flowchart li:before {
+	content: '';
+	position: absolute;
+	top: 1em;
+	width: 100%;
+	border-top: 3px solid black
+}
+
+.flowchart li:after {
+	content: '';
+	position: absolute;
+	top: 1em;
+	left: 50%;
+	height: 2em;
+	border-left: 3px solid black
+}
+
+.flowchart li:first-child:before {
+	left: 50%;
+	width: 50%
+}
+
+.flowchart li:last-child:before {
+	right: 50%;
+	width: 50%
+}
+
+.flowchart li:only-child:before {
+	display: none
+}
+
+.flowchart>li {
+	padding: 0
+}
+
+.flowchart>li:before,
+.flowchart>li:after {
+	display: none
+}
+#child_input_box{
+    border: none;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+    background-color: white;
+}
+.add_btn{
+    border-radius: 50%;
+    width: 50px;
+    height:  50px;
+    border: blue solid 2px;
+}
+h1,h5{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 400px; 
+    overflow: auto; 
+    background-color: #f2f2f2;
+	margin-top: 0;
+	position: fixed;
+	top: 50vh;
+	left: 50vw;
+	transform: translate(-50%,-50%);
+	height: 400px; 
+	width: 80%;
+	background-color: white;
+  }
+  
+  .modal-content {
+	border: none;
+	padding-left: 25%;
+    
+  }
+  .input_div_value{
+    border: none;
+    background-color: inherit;
+    width: 100%;
+    height: 80%;
+    margin-left: 10%;
+	text-align: center;
+	font-size: larger;
+	padding-right: 12%;
+	color: black;
+  }
+  .left{
+      width: 100px;
+  }
+  .hidden_input{
+	  display: none;
+  }
+  #form_inputs{
+	width: 100%;
+	margin-left: 10%;
+	margin-right: 10%;
+	border: none;
+  }
+  .overlay {
+	position: fixed; 
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(128,128,128,0.5);
+	display: none; 
+  }

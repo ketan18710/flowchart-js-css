@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="./jquery.js"></script>
+    <title>Flowcharts</title>
+    <link href="./style.css" rel="stylesheet">
+    <script src="./main.js"></script>
+  </head>
+  <body>
+    <h1>Flowchart</h1>
+    <h5>*Click once to update and double click to delete</h5>
+    <ul class="flowchart">
+      <li class="blah">
+            <h5>Start</h5>
+        <ul>
+            <li class="blah"><button class="add_btn" onclick="add_btn_click(this)"><h1 class="btn-h1">+</h1></button></li>
+        </ul>
+      </li>
+    </ul>
+
+    <div class="overlay">
+      <div id="myModal" class="modal">
+          <div class="modal-content">
+            <h5>How many Elements do you want to add</h5>
+            <div class="radio_btns">
+              <input type="radio" name="number_of_children"  value="0" selected style="display: none;">
+              <input type="radio" name="number_of_children"  value="1">1 child
+              <input type="radio" name="number_of_children"  value="2">2 child
+            </div>
+            <div class="hidden_input" id="form_inputs"> 
+              <input type="text" id="child_1" class="hidden_input">
+              <input type="text" id="child_2" class="hidden_input">
+              <button id="submit_form" >Submit</button>
+            </div>
+          </div>
+      </div>
+    </div>
+      <input type="hidden" id="first_add_btn" value="true">
+  </body>
+</html>
